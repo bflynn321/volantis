@@ -15,6 +15,7 @@ public class Dragon
 	String color;
 	String size;
 	String name;
+	bool asleep;
 	int health = 100;
 	public Dragon(String n)
 	{
@@ -28,9 +29,17 @@ public class Dragon
 	{
 		System.out.println(name + " flaps his enormous wings and takes flight!");
 	}
-	void sleeping()
+	bool sleeping()
 	{
-		System.out.println(name + " is sleeping...you are never supposed to wake a sleeping dragon..it is known, IT IS KNOWN");
+		if(asleep == true)
+		{
+			System.out.println(name + " is sleeping...you are never supposed to wake a sleeping dragon..it is known, IT IS KNOWN");
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 
 }
