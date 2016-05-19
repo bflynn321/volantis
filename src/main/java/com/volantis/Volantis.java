@@ -10,7 +10,7 @@ public class Volantis
 		Dragon Viserion = new Dragon("Viserion");
 	}
 }
-public class Dragon
+public class Dragon extends Volantis
 {
 	String color;
 	String size;
